@@ -13,6 +13,9 @@ h3 {
 	margin-top: 0;
 	margin-bottom: 20px;
 }
+button {
+	cursor: pointer;
+}
 header {
 	padding-bottom: 45px;
 }
@@ -25,11 +28,14 @@ main section:nth-child(even) {
 main section {
 	padding-top: 15px;
 }
-.menuTypeSection {
+.menuTypeSection, .itemsToCheckOutSection {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: space-around;
+}
+#itemsToCheckOutSection {
+	border: 1px solid red;
 }
 .coverImage {
 	margin: 0 auto;
@@ -52,14 +58,33 @@ main section {
 .menuPrice, .menuName {
 	font-weight: 900;
 }
-.cart {
+.menuTop {
 	position: fixed;
 	top: 0;
-	right: 0;
 	background: white;
 	width: 100%;
 	border-bottom: 1px solid gray;
-	text-align: right;
-	padding: 5px 45px 5px 0;
+	padding: 5px 25px 5px 25px;
 	font-size: 16px;
+}
+.topMenuLeft {
+	float: left;
+	text-align: left;
+}
+.topMenuRight {
+	float: right;
+	text-align: right;
+}
+#placeOrderButton {
+	margin: 15px 0 45px 0;
+	font-size: 24px;
+}
+.removeButton {
+	color: red;
+}
+#totalPrice {
+	margin-bottom: 5px;
+}
+.marginTopFive {
+	margin-top: 5px;
 }
